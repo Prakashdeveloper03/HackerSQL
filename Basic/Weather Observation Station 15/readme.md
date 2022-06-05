@@ -1,12 +1,10 @@
-# Weather Observation Station 2
+# Weather Observation Station 15
 ![made-with-sql](https://img.shields.io/badge/Made%20with-SQL-007396.svg)
 ![terminal](https://img.shields.io/badge/Windows%20Terminal-4D4D4D?logo=windows%20terminal&logoColor=white)
 ![sublime text](https://img.shields.io/badge/sublime_text-%23575757.svg?logo=sublime-text&logoColor=important)
 ![vscode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?logo=visual%20studio%20code&logoColor=white)
 
-Query the following two values from the `STATION` table:
-The sum of all values in `LAT_N` rounded to a scale of  decimal places.
-The sum of all values in `LONG_W` rounded to a scale of  decimal places.
+Query the Western Longitude (LONG_W) for the largest Northern Latitude (LAT_N) in STATION that is less than `137.2345`. Round your answer to 4 decimal places.
 
 **Input Format**
 
@@ -18,6 +16,8 @@ where `LAT_N` is the northern latitude and `LONG_W` is the western longitude.
 
 ### Solution
 ```sql
-SELECT ROUND(SUM(Lat_N), 2), ROUND(SUM(Long_W), 2)
-FROM Station;
+SELECT ROUND((Long_W), 4) FROM Station
+WHERE Lat_N < 137.2345
+ORDER BY Lat_N DESC
+LIMIT 1;
 ```
