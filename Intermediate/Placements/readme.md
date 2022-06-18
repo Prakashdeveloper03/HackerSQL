@@ -26,6 +26,7 @@ Scarlet
 **Explanation**
 
 See the following table:
+
 ![explanation](https://s3.amazonaws.com/hr-challenge-images/12895/1443819966-c37c146d27-3.png)
 
 Now, Samantha's best friend got offered a higher salary than her at 11.55
