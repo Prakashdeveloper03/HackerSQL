@@ -1,2 +1,6 @@
-SELECT COUNT(*) FROM City
-WHERE Population > 100000;
+SELECT
+    COUNT(*)
+FROM
+    City
+WHERE
+    Population > 100000;

@@ -12,6 +12,10 @@ The CITY table is described as follows:
 
 ### Solution
 ```sql
-SELECT COUNT(*) FROM City
-WHERE Population > 100000;
+SELECT
+    COUNT(*)
+FROM
+    City
+WHERE
+    Population > 100000;
 ```

@@ -12,6 +12,10 @@ The CITY table is described as follows:
 
 ### Solution
 ```sql
-SELECT * FROM City
-WHERE CountryCode = "JPN";
+SELECT
+    *
+FROM
+    City
+WHERE
+    CountryCode = "JPN";
 ```

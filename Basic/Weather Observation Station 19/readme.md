@@ -22,7 +22,13 @@ where `LAT_N` is the northern latitude and `LONG_W` is the western longitude.
 
 ### Solution
 ```sql
-SELECT ROUND(SQRT(POWER(MAX(lat_N) - MIN(lat_N), 2) +
-                  POWER(MAX(long_W) - MIN(long_W), 2)), 4)
-FROM STATION;
+SELECT
+    ROUND(
+        SQRT(
+            POWER(MAX(lat_N) - MIN(lat_N), 2) + POWER(MAX(long_W) - MIN(long_W), 2)
+        ),
+        4
+    )
+FROM
+    STATION;
 ```

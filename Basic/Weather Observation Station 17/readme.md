@@ -16,8 +16,14 @@ where `LAT_N` is the northern latitude and `LONG_W` is the western longitude.
 
 ### Solution
 ```sql
-SELECT ROUND((Long_W), 4) FROM Station
-WHERE Lat_N > 38.7780
-ORDER BY Lat_N ASC
-LIMIT 1;
+SELECT
+    ROUND((Long_W), 4)
+FROM
+    Station
+WHERE
+    Lat_N > 38.7780
+ORDER BY
+    Lat_N ASC
+LIMIT
+    1;
 ```

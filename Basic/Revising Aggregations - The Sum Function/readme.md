@@ -12,6 +12,10 @@ The CITY table is described as follows:
 
 ### Solution
 ```sql
-SELECT SUM(Population) FROM City
-WHERE District = "California";
+SELECT
+    SUM(Population)
+FROM
+    City
+WHERE
+    District = "California";
 ```

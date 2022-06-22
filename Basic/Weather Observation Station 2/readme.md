@@ -18,6 +18,9 @@ where `LAT_N` is the northern latitude and `LONG_W` is the western longitude.
 
 ### Solution
 ```sql
-SELECT ROUND(SUM(Lat_N), 2), ROUND(SUM(Long_W), 2)
-FROM Station;
+SELECT
+    ROUND(SUM(Lat_N), 2),
+    ROUND(SUM(Long_W), 2)
+FROM
+    Station;
 ```

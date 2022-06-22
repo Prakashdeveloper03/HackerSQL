@@ -12,6 +12,10 @@ The CITY table is described as follows:
 
 ### Solution
 ```sql
-SELECT AVG(Population) FROM City
-WHERE District = "California";
+SELECT
+    AVG(Population)
+FROM
+    City
+WHERE
+    District = "California";
 ```

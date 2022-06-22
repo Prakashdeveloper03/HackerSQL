@@ -4,4 +4,4 @@
 ![sublime text](https://img.shields.io/badge/sublime_text-%23575757.svg?logo=sublime-text&logoColor=important)
 ![vscode](https://img.shields.io/badge/Visual_Studio_Code-0078D4?logo=visual%20studio%20code&logoColor=white)
 
-This repository contains all my Hackerrank problem solutions source code in SQL programming languages.
+This repository contains all my Hackerrank problem solutions source code in SQL programming language.

@@ -14,6 +14,10 @@ where `LAT_N` is the northern latitude and `LONG_W` is the western longitude.
 
 ### Solution
 ```sql
-SELECT DISTINCT city FROM station
-WHERE id % 2 = 0;
+SELECT
+    DISTINCT city
+FROM
+    station
+WHERE
+    id % 2 = 0;
 ```

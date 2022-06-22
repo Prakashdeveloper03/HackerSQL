@@ -14,5 +14,8 @@ The CITY table is described as follows:
 
 ### Solution
 ```sql
-SELECT MAX(Population) - MIN(Population) FROM City;
+SELECT
+    MAX(Population) - MIN(Population)
+FROM
+    City;
 ```

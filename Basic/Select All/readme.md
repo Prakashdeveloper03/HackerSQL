@@ -12,5 +12,8 @@ The CITY table is described as follows:
 
 ### Solution
 ```sql
-SELECT * FROM City;
+SELECT
+    *
+FROM
+    City;
 ```

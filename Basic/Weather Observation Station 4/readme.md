@@ -14,6 +14,8 @@ where `LAT_N` is the northern latitude and `LONG_W` is the western longitude.
 
 ### Solution
 ```sql
-SELECT COUNT(City) - COUNT(DISTINCT City)
-FROM Station;
+SELECT
+    COUNT(City) - COUNT(DISTINCT City)
+FROM
+    Station;
 ```

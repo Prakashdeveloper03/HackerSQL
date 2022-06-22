@@ -31,7 +31,13 @@ Only Ashley, Julia, and Belvet have Marks > 75. If you look at the last three ch
 
 ### Solution
 ```sql
-SELECT Name FROM Students
-WHERE Marks > 75
-ORDER BY RIGHT(Name, 3) ASC, Id ASC;
+SELECT
+    Name
+FROM
+    Students
+WHERE
+    Marks > 75
+ORDER BY
+    RIGHT(Name, 3) ASC,
+    Id ASC;
 ```

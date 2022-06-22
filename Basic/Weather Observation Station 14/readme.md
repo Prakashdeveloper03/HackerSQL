@@ -16,6 +16,10 @@ where `LAT_N` is the northern latitude and `LONG_W` is the western longitude.
 
 ### Solution
 ```sql
-SELECT TRUNCATE(MAX(Lat_N), 4) FROM Station
-WHERE Lat_N < 137.2345;
+SELECT
+    TRUNCATE(MAX(Lat_N), 4)
+FROM
+    Station
+WHERE
+    Lat_N < 137.2345;
 ```

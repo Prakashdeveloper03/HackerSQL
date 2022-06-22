@@ -1,3 +1,9 @@
-SELECT Name FROM Students
-WHERE Marks > 75
-ORDER BY RIGHT(Name, 3) ASC, Id ASC;
+SELECT
+    Name
+FROM
+    Students
+WHERE
+    Marks > 75
+ORDER BY
+    RIGHT(Name, 3) ASC,
+    Id ASC;

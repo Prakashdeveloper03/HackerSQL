@@ -16,7 +16,11 @@ Write a query to print the pattern P(20).
 
 ### Solution
 ```sql
-SET @row := 21;
-SELECT repeat('* ', @row := @row - 1)
-FROM information_schema.tables;
+SET
+    @row := 21;
+
+SELECT
+    repeat('* ', @row := @row - 1)
+FROM
+    information_schema.tables;
 ```

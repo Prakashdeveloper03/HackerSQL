@@ -12,6 +12,10 @@ The CITY table is described as follows:
 
 ### Solution
 ```sql
-SELECT * FROM City
-WHERE ID = 1661;
+SELECT
+    *
+FROM
+    City
+WHERE
+    ID = 1661;
 ```

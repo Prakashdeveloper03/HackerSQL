@@ -14,7 +14,11 @@ where `LAT_N` is the northern latitude and `LONG_W` is the western longitude.
 
 ### Solution
 ```sql
-SELECT DISTINCT City FROM Station
-WHERE LEFT(City, 1) IN ('a','e','i','o','u') AND
-      RIGHT(City, 1) IN ('a','e','i','o','u');
+SELECT
+      DISTINCT City
+FROM
+      Station
+WHERE
+      LEFT(City, 1) IN ('a', 'e', 'i', 'o', 'u')
+      AND RIGHT(City, 1) IN ('a', 'e', 'i', 'o', 'u');
 ```

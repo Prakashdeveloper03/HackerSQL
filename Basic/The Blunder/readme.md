@@ -40,6 +40,8 @@ The resulting error between the two calculations is *2159.00 - 98.00 = 2061.00*.
 
 ### Solution
 ```sql
-SELECT CEIL(AVG(Salary) - AVG(REPLACE(Salary, '0', '')))
-FROM EMPLOYEES
+SELECT
+    CEIL(AVG(Salary) - AVG(REPLACE(Salary, '0', '')))
+FROM
+    EMPLOYEES
 ```

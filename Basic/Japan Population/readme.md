@@ -14,6 +14,10 @@ The CITY table is described as follows:
 
 ### Solution
 ```sql
-SELECT SUM(Population) FROM City
-WHERE CountryCode = "JPN";
+SELECT
+    SUM(Population)
+FROM
+    City
+WHERE
+    CountryCode = "JPN";
 ```

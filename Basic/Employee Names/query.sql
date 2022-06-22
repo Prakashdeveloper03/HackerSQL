@@ -1,2 +1,6 @@
-SELECT Name FROM Employee
-ORDER BY Name ASC;
+SELECT
+    Name
+FROM
+    Employee
+ORDER BY
+    Name ASC;

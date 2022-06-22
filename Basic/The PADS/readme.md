@@ -53,13 +53,25 @@ The results of the second query are ascendingly ordered first by number of names
 
 ### Solution
 ```sql
-SELECT CONCAT(NAME, CONCAT("(",CONCAT(SUBSTR(OCCUPATION, 1, 1),")")))
-FROM OCCUPATIONS
-ORDER BY NAME ASC;
+SELECT
+    CONCAT(
+        NAME,
+        CONCAT("(", CONCAT(SUBSTR(OCCUPATION, 1, 1), ")"))
+    )
+FROM
+    OCCUPATIONS
+ORDER BY
+    NAME ASC;
 
-SELECT "There are a total of ", COUNT(OCCUPATION), CONCAT(lower(occupation),"s.")
-FROM OCCUPATIONS
-GROUP BY OCCUPATION
-ORDER BY COUNT(OCCUPATION) ASC,
-         OCCUPATION ASC;
+SELECT
+    "There are a total of ",
+    COUNT(OCCUPATION),
+    CONCAT(lower(occupation), "s.")
+FROM
+    OCCUPATIONS
+GROUP BY
+    OCCUPATION
+ORDER BY
+    COUNT(OCCUPATION) ASC,
+    OCCUPATION ASC;
 ```

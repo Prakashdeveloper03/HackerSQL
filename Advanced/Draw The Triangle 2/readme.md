@@ -16,8 +16,13 @@ Write a query to print the pattern P(20).
 
 ### Solution
 ```sql
-SET @row := 0;
-SELECT repeat('* ', @row := @row + 1)
-FROM information_schema.tables
-WHERE @row < 20
+SET
+    @row := 0;
+
+SELECT
+    repeat('* ', @row := @row + 1)
+FROM
+    information_schema.tables
+WHERE
+    @row < 20
 ```
